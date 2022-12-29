@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>default-value-setting</name>
+  <uuid>d9711fa2-83cd-4701-bec9-607f5050a658</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set cliente to a new ML model input where
+		the ds grupo modalidade is the ds grupo modalidade of 'cliente', 
+		the escore is the escore of 'cliente' , 
+		the estado civil is the estado civil of 'cliente' , 
+		the genero is the genero of 'cliente', 
+		the idade is the idade of 'cliente' , 
+		the lime contratado is the lime contratado of 'cliente' , 
+		the lp mora is the lp mora of 'cliente', 
+		the nr dias atr is the nr dias atr of 'cliente' , 
+		the possui cartao is the possui cartao of 'cliente', 
+		the renda inferida is the renda inferida of 'cliente' , 
+		the status cliente is the status cliente of 'cliente', 
+		the status conta is the status conta of 'cliente', 
+		the tempo conta is the tempo conta of 'cliente', 
+		the vl cobranca is the vl cobranca of 'cliente', 
+		the vl liquido is the vl liquido of 'cliente', 
+		the vr entrada is the vr entrada of 'cliente', 
+		the vr parc reng is the vr parc reng of 'cliente', 
+		the vr renegociado is the vr renegociado of 'cliente', 
+		the vr tot divida is the vr tot divida of 'cliente';]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

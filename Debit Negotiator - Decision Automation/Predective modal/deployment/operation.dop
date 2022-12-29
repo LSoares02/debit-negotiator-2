@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Predective modal">
+  <name>Predective-modal</name>
+  <uuid>ba705f00-2ffb-4d8d-9bb3-7a4fa8a21679</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#2c1a2d50-8314-4be9-b5a8-cd376a9246a7"/>
+  <targetRuleProject href="../../Predective%20modal#f956c897-ae56-4829-b1ee-ef4cc0ab16d2"/>
+  <tags key="ProviderType">
+    <value><![CDATA[OPS]]></value>
+  </tags>
+  <tags key="ProviderId">
+    <value><![CDATA[disconnectedProvider]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

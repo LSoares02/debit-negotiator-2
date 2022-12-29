@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>output</name>
+  <uuid>a3484a42-9e53-498f-88f8-d5bae60f95e7</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the prediction of 'ML model invocation' is 0
+then
+	set decision to "Cliente classe 0" ;
+    print decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

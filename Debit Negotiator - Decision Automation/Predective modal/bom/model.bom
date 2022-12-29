@@ -1,0 +1,164 @@
+
+package cp4admin.debit_negotiator_ads.ads.predectivemodal;
+
+
+public class Error
+        property "ads.typeId" "2"
+        property "de.generated" "true"
+{
+    public string code
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "code";
+    public string message
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "message";
+    public Error(string code, string message)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Error()
+                property "dataio.default" "true";
+}
+
+public class Input
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonPropertyOrder" "{ds_grupo_modalidade,vr_tot_divida,lp_mora,nr_dias_atr,status_conta,status_cliente,escore,tempo_conta,idade,lime_contratado,renda_inferida,genero,possui_cartao,estado_civil,vr_parc_reng,vr_entrada,vr_renegociado,vl_liquido,vl_cobranca}"
+        property "de.generated" "true"
+{
+    public string dsGrupoModalidade
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ds_grupo_modalidade";
+    public java.lang.Long escore
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "escore";
+    public string estadoCivil
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "estado_civil";
+    public string genero
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "genero";
+    public java.lang.Long idade
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "idade";
+    public string limeContratado
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "lime_contratado";
+    public string lpMora
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "lp_mora";
+    public java.lang.Long nrDiasAtr
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "nr_dias_atr";
+    public string possuiCartao
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "possui_cartao";
+    public java.lang.Double rendaInferida
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "renda_inferida";
+    public string statusCliente
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "status_cliente";
+    public string statusConta
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "status_conta";
+    public java.lang.Long tempoConta
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "tempo_conta";
+    public java.lang.Double vlCobranca
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vl_cobranca";
+    public java.lang.Double vlLiquido
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vl_liquido";
+    public java.lang.Double vrEntrada
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vr_entrada";
+    public java.lang.Double vrParcReng
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vr_parc_reng";
+    public java.lang.Double vrRenegociado
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vr_renegociado";
+    public java.lang.Double vrTotDivida
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "vr_tot_divida";
+    public Input(string dsGrupoModalidade, 
+        java.lang.Long escore, 
+        string estadoCivil, 
+        string genero, 
+        java.lang.Long idade, 
+        string limeContratado, 
+        string lpMora, 
+        java.lang.Long nrDiasAtr, 
+        string possuiCartao, 
+        java.lang.Double rendaInferida, 
+        string statusCliente, 
+        string statusConta, 
+        java.lang.Long tempoConta, 
+        java.lang.Double vlCobranca, 
+        java.lang.Double vlLiquido, 
+        java.lang.Double vrEntrada, 
+        java.lang.Double vrParcReng, 
+        java.lang.Double vrRenegociado, 
+        java.lang.Double vrTotDivida)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Input()
+                property "dataio.default" "true";
+}
+
+public class Output
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonIgnoreProperties" {
+            ignoreUnknown "true"
+        }
+        property "de.generated" "true"
+{
+    public cp4admin.debit_negotiator_ads.ads.predectivemodal.Error error
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "error";
+    public java.lang.Integer prediction
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "prediction";
+    public java.util.List probability domain 0,* class java.lang.Double
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "probability";
+    public Output(java.lang.Integer prediction, 
+        java.util.List probability domain 0,* class java.lang.Double)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Output()
+                property "dataio.default" "true";
+    public void addTo_probability(java.lang.Double probability)
+                property collectionAttribute "probability"
+                property update "true";
+    public void clear_probability()
+                property collectionAttribute "probability"
+                property update "true";
+    public boolean inError()
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                };
+    public void removeFrom_probability(java.lang.Double probability)
+                property collectionAttribute "probability"
+                property update "true";
+    public static Output run(cp4admin.debit_negotiator_ads.ads.predectivemodal.Input input)
+                property pureFunction "true";
+    public static Output run(com.ibm.decision.run.RunContext runContext, cp4admin.debit_negotiator_ads.ads.predectivemodal.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    providerInfoId "cp4admin/debit-negotiator-ads/Deployment do Modelo Original Taxa1672152600834b70325e6-4db8-41fe-baa0-136e905098d0"
+                }
+                property pureFunction "true";
+    public void set_probability(java.util.Collection probability domain 0,* class java.lang.Double)
+                property collectionAttribute "probability"
+                property update "true";
+}
+

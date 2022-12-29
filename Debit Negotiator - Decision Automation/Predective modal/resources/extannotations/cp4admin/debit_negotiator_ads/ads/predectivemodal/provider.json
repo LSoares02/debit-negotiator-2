@@ -1,0 +1,9 @@
+{
+  "name" : "cp4admin/debit-negotiator-ads/Deployment do Modelo Original Taxa1672152600834",
+  "type" : "WML",
+  "description" : "",
+  "mlUrl" : "https://us-south.ml.cloud.ibm.com/",
+  "authUrl" : "https://iam.bluemix.net/identity/token",
+  "instanceId" : "e2473b9f-0a2b-4282-af2b-5afa43c838f9",
+  "apiKey" : null
+}

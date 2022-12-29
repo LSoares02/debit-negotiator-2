@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>default-value-setting</name>
+  <uuid>1a8cbd5f-42f0-4b22-9201-df7258e60b0b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set taxa_juros_3 to 0.4 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

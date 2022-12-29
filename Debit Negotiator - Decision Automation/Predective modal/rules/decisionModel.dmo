@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Predective modal</name>
+  <uuid>2c1a2d50-8314-4be9-b5a8-cd376a9246a7</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="predectiveModal" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input" name="Input">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input" collection="false" name="Input"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_ii" name="Input" typeRef="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input" collection="false" name="Input"/>
+                <output bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/mapping.drl" kind="BusinessRule" name="mapping"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output-mapping" name="Output mapping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.String" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/output.drl" kind="BusinessRule" name="output"/>
+                <rule defaultRule="false" href="output-mapping/output1.drl" kind="BusinessRule" name="output1"/>
+                <rule defaultRule="false" href="output-mapping/output2.drl" kind="BusinessRule" name="output2"/>
+                <rule defaultRule="false" href="output-mapping/output3.drl" kind="BusinessRule" name="output3"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#prediction"/>
+        </informationRequirement>
+    </decision>
+    <decision id="prediction" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input" collection="false" name="Input mapping"/>
+                <output bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="prediction/prediction.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="prediction_ii" name="ML model invocation" typeRef="cp4admin.debit_negotiator_ads.ads.predectivemodal.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>
