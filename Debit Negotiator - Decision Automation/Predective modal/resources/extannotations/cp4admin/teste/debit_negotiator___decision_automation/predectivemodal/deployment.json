@@ -1,0 +1,29 @@
+{
+  "metadata" : {
+    "id" : "b70325e6-4db8-41fe-baa0-136e905098d0",
+    "name" : "Deployment do Modelo Original Taxa",
+    "modified_at" : "2022-12-12T14:38:39.915Z",
+    "created_at" : "2022-12-12T14:38:39.915Z",
+    "owner" : "IBMid-6630024A3G",
+    "space_id" : "e2473b9f-0a2b-4282-af2b-5afa43c838f9"
+  },
+  "entity" : {
+    "name" : "Deployment do Modelo Original Taxa",
+    "space_id" : "e2473b9f-0a2b-4282-af2b-5afa43c838f9",
+    "custom" : { },
+    "online" : { },
+    "status" : {
+      "state" : "ready",
+      "online_url" : {
+        "url" : "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/b70325e6-4db8-41fe-baa0-136e905098d0/predictions"
+      },
+      "serving_urls" : [ "https://us-south.ml.cloud.ibm.com/ml/v4/deployments/b70325e6-4db8-41fe-baa0-136e905098d0/predictions" ]
+    },
+    "asset" : {
+      "id" : "58f8c005-0811-49a4-b138-36844d48deb6"
+    }
+  },
+  "name" : "Deployment do Modelo Original Taxa",
+  "status" : "ready",
+  "deployedAt" : "2022-12-12T14:38:39.915Z"
+}
