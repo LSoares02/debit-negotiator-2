@@ -75,7 +75,7 @@
             <requiredInput href="#node_0"/>
         </informationRequirement>
         <knowledgeRequirement>
-            <requiredKnowledge href="#node_8"/>
+            <requiredKnowledge href="#node_15"/>
         </knowledgeRequirement>
     </decision>
     <decision id="node_10" name="valor_divida">
@@ -127,15 +127,15 @@
         </extensionElements>
         <variable id="node_14_ii" name="taxa_juros_0" typeRef="java.lang.Double"/>
     </inputData>
-    <businessKnowledgeModel id="node_8" name="Predective modal">
+    <businessKnowledgeModel id="node_15" name="Predective modal 2">
         <extensionElements>
             <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
                 <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
             </properties>
         </extensionElements>
-        <variable name="Predective modal" typeRef="java.lang.String"/>
+        <variable name="Predective modal 2" typeRef="java.lang.String"/>
         <encapsulatedLogic typeRef="java.lang.String">
-            <formalParameter name="input" typeRef="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input"/>
+            <formalParameter name="input" typeRef="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input"/>
             <context>
                 <contextEntry>
                     <variable name="class"/>
@@ -146,7 +146,7 @@
                 <contextEntry>
                     <variable name="method signature"/>
                     <literalExpression>
-                        <text>"run(cp4admin.debit_negotiator_ads.ads.predectivemodal.Input)"</text>
+                        <text>"run(cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input)"</text>
                     </literalExpression>
                 </contextEntry>
             </context>
