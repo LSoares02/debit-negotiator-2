@@ -1,0 +1,81 @@
+{
+  "id" : "1",
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "ds_grupo_modalidade",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "vr_tot_divida",
+    "type" : "float64",
+    "nullable" : true
+  }, {
+    "name" : "lp_mora",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "nr_dias_atr",
+    "type" : "int64",
+    "nullable" : true
+  }, {
+    "name" : "status_conta",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "status_cliente",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "escore",
+    "type" : "int64",
+    "nullable" : true
+  }, {
+    "name" : "tempo_conta",
+    "type" : "int64",
+    "nullable" : true
+  }, {
+    "name" : "idade",
+    "type" : "int64",
+    "nullable" : true
+  }, {
+    "name" : "lime_contratado",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "renda_inferida",
+    "type" : "float64",
+    "nullable" : true
+  }, {
+    "name" : "genero",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "possui_cartao",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "estado_civil",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "vr_parc_reng",
+    "type" : "float64",
+    "nullable" : true
+  }, {
+    "name" : "vr_entrada",
+    "type" : "float64",
+    "nullable" : true
+  }, {
+    "name" : "vr_renegociado",
+    "type" : "float64",
+    "nullable" : true
+  }, {
+    "name" : "vl_liquido",
+    "type" : "float64",
+    "nullable" : true
+  }, {
+    "name" : "vl_cobranca",
+    "type" : "float64",
+    "nullable" : true
+  } ]
+}

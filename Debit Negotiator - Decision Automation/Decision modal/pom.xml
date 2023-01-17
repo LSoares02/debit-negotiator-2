@@ -2,12 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>cp4admin.debit_negotiator_ads.ads</groupId>
+        <groupId>cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation</groupId>
         <artifactId>debitNegotiator-DecisionAutomation</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>cp4admin.debit_negotiator_ads.ads</groupId>
+    <groupId>cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation</groupId>
     <artifactId>decisionModal</artifactId>
     <version>LATEST-SNAPSHOT</version>
 
@@ -37,7 +37,7 @@
 
 <dependencies>
         <dependency>
-            <groupId>cp4admin.debit_negotiator_ads.ads</groupId>
+            <groupId>cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation</groupId>
             <artifactId>predectiveModal</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>

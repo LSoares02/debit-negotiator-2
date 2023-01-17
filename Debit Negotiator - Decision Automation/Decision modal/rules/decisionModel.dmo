@@ -10,11 +10,11 @@
     <inputData id="node_0" name="cliente">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input" collection="false" name="cliente"/>
+                <output bomType="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input" collection="false" name="cliente"/>
                 <rule defaultRule="true" href="node_0/default-value-setting.drl" kind="BusinessRule" name="default-value-setting"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="cliente" typeRef="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input"/>
+        <variable id="node_0_ii" name="cliente" typeRef="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input"/>
     </inputData>
     <decision id="node_3" name="msg_final">
         <extensionElements>
@@ -65,7 +65,7 @@
     <decision id="node_9" name="input_modelo">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input" collection="false" name="cliente"/>
+                <input bomType="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input" collection="false" name="cliente"/>
                 <output bomType="java.lang.String" collection="false" name="input_modelo"/>
                 <rule defaultRule="false" href="node_9/Predictive%20model%20output.drl" kind="BusinessRule" name="Predictive model output"/>
             </ruleset>
@@ -81,7 +81,7 @@
     <decision id="node_10" name="valor_divida">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="cp4admin.debit_negotiator_ads.ads.predectivemodal.Input" collection="false" name="cliente"/>
+                <input bomType="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input" collection="false" name="cliente"/>
                 <output bomType="java.lang.Double" collection="false" name="valor_divida"/>
                 <rule defaultRule="false" href="node_10/Debit%20value.drl" kind="BusinessRule" name="Debit value"/>
             </ruleset>

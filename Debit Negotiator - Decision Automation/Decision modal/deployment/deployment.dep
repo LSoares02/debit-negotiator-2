@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.debit_negotiator_ads.ads:decisionModal" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.debit_negotiator_ads.debit_negotiator___decision_automation.decisionmodal" managingXom="true">
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation:decisionModal" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.debit_negotiator_ads.debit_negotiator___decision_automation.decisionmodal" managingXom="true">
   <name>Decision-modal</name>
   <uuid>51aa84d4-d240-4db7-8cca-64ee6920b4ed</uuid>
   <locales>en_US</locales>

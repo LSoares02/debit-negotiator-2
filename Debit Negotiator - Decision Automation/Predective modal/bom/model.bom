@@ -1,5 +1,5 @@
 
-package cp4admin.debit_negotiator_ads.ads.predectivemodal;
+package cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal;
 
 
 public class Error
@@ -117,7 +117,7 @@ public class Output
         }
         property "de.generated" "true"
 {
-    public cp4admin.debit_negotiator_ads.ads.predectivemodal.Error error
+    public cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Error error
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "error";
     public java.lang.Integer prediction
@@ -148,13 +148,13 @@ public class Output
     public void removeFrom_probability(java.lang.Double probability)
                 property collectionAttribute "probability"
                 property update "true";
-    public static Output run(cp4admin.debit_negotiator_ads.ads.predectivemodal.Input input)
+    public static Output run(cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input input)
                 property pureFunction "true";
-    public static Output run(com.ibm.decision.run.RunContext runContext, cp4admin.debit_negotiator_ads.ads.predectivemodal.Input input)
+    public static Output run(com.ibm.decision.run.RunContext runContext, cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input input)
                 property "de.generated" {
                     $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
                     $target "BOM",
-                    providerInfoId "cp4admin/debit-negotiator-ads/Deployment do Modelo Original Taxa1672152600834b70325e6-4db8-41fe-baa0-136e905098d0"
+                    providerInfoId "cp4admin/Debit-Negotiator---Decision-Automation-Project/Watson Machine Learning - Debit Negotiator1673966358359b70325e6-4db8-41fe-baa0-136e905098d0"
                 }
                 property pureFunction "true";
     public void set_probability(java.util.Collection probability domain 0,* class java.lang.Double)

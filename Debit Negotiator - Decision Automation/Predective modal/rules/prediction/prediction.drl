@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
   <name>predectiveModal</name>
-  <uuid>22ac3ba2-1e73-4e69-b99f-d844e3de3139</uuid>
+  <uuid>b9ecbf7f-ec42-4e28-9188-5110e4819402</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[set decision to predict( 'Input mapping' ) ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

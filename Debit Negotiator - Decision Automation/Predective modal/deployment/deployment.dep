@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.debit_negotiator_ads.ads:predectiveModal" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.debit_negotiator_ads.ads.predectivemodal" managingXom="true">
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation:predectiveModal" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.debit_negotiator_ads.ads.predectivemodal" managingXom="true">
   <name>Predective-modal</name>
   <uuid>846e13c8-6936-455d-b9e2-0a140d6a04d9</uuid>
   <locales>en_US</locales>

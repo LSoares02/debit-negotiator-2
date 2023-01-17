@@ -1,0 +1,105 @@
+{
+  "metadata" : {
+    "id" : "58f8c005-0811-49a4-b138-36844d48deb6",
+    "name" : "Scikit model",
+    "modified_at" : "2022-12-12T14:37:23.021Z",
+    "created_at" : "2022-12-12T14:37:05.530Z",
+    "owner" : "IBMid-6630024A3G",
+    "space_id" : "e2473b9f-0a2b-4282-af2b-5afa43c838f9"
+  },
+  "entity" : {
+    "label_column" : "classe",
+    "type" : "scikit-learn_1.0",
+    "schemas" : {
+      "input" : [ {
+        "id" : "1",
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "ds_grupo_modalidade",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "vr_tot_divida",
+          "type" : "float64",
+          "nullable" : true
+        }, {
+          "name" : "lp_mora",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "nr_dias_atr",
+          "type" : "int64",
+          "nullable" : true
+        }, {
+          "name" : "status_conta",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "status_cliente",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "escore",
+          "type" : "int64",
+          "nullable" : true
+        }, {
+          "name" : "tempo_conta",
+          "type" : "int64",
+          "nullable" : true
+        }, {
+          "name" : "idade",
+          "type" : "int64",
+          "nullable" : true
+        }, {
+          "name" : "lime_contratado",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "renda_inferida",
+          "type" : "float64",
+          "nullable" : true
+        }, {
+          "name" : "genero",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "possui_cartao",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "estado_civil",
+          "type" : "object",
+          "nullable" : true
+        }, {
+          "name" : "vr_parc_reng",
+          "type" : "float64",
+          "nullable" : true
+        }, {
+          "name" : "vr_entrada",
+          "type" : "float64",
+          "nullable" : true
+        }, {
+          "name" : "vr_renegociado",
+          "type" : "float64",
+          "nullable" : true
+        }, {
+          "name" : "vl_liquido",
+          "type" : "float64",
+          "nullable" : true
+        }, {
+          "name" : "vl_cobranca",
+          "type" : "float64",
+          "nullable" : true
+        } ]
+      } ],
+      "output" : [ ]
+    }
+  },
+  "system" : {
+    "warnings" : [ ]
+  },
+  "id" : "58f8c005-0811-49a4-b138-36844d48deb6",
+  "name" : "Scikit model",
+  "trainedAt" : "2022-12-12T14:37:05.530Z",
+  "modifiedAt" : "2022-12-12T14:37:23.021Z"
+}
