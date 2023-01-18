@@ -16,19 +16,6 @@
         </extensionElements>
         <variable id="node_0_ii" name="cliente" typeRef="cp4admin.debit_negotiator___decision_automation_project.debit_negotiator___decision_automation.predectivemodal.Input"/>
     </inputData>
-    <decision id="node_3" name="msg_final">
-        <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="java.lang.Double" collection="false" name="taxa_juros"/>
-                <output bomType="java.lang.String" collection="false" name="msg_final"/>
-                <rule defaultRule="false" href="node_3/Decision%20Output%20.drl" kind="BusinessRule" name="Decision Output "/>
-            </ruleset>
-        </extensionElements>
-        <variable id="node_3_ii" name="msg_final" typeRef="java.lang.String"/>
-        <informationRequirement>
-            <requiredInput href="#node_7"/>
-        </informationRequirement>
-    </decision>
     <decision id="node_7" name="taxa_juros">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
